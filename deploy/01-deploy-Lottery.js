@@ -50,6 +50,9 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     log: true,
     waitConfirmations: network.config.blockConfirmations || 1,
   });
+
+  log("Lottery contract deployed!");
+  log("--------------------------------------------------------");
 };
 
 module.exports.tags = ["all", "lottery"];
